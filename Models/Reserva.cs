@@ -6,6 +6,8 @@ namespace DesafioProjetoHospedagem.Models
         public Suite Suite { get; set; }
         public int DiasReservados { get; set; }
 
+        private List<string> suite = new List<string>();
+
         public Reserva() { }
 
         public Reserva(int diasReservados)
@@ -31,6 +33,8 @@ namespace DesafioProjetoHospedagem.Models
         public void CadastrarSuite(Suite suite)
         {
             Suite = suite;
+
+
         }
 
         public int ObterQuantidadeHospedes()
